@@ -1,0 +1,99 @@
+
+<div class="background-container">
+    <div *ngFor="let icon of icons" 
+         [ngStyle]="{ 
+           left: icon.left, 
+           width: icon.size, 
+           animationDuration: icon.duration, 
+           transform: 'rotate(' + icon.rotation + ')'
+         }" 
+         class="falling-icon">
+      <img [src]="icon.src" alt="icon">
+    </div>
+</div>
+  
+  
+<div class="container">
+    <div class="header">
+        <div class="info">
+            <h1 class="name">Самошук Антон Юрьевич</h1>
+            <h1 class="name">Возраст: {{age}}</h1>
+        </div>
+        <img src="Me.jpg" alt="Фото профиля" class="profile-photo">
+    </div>
+    
+    <div class="section about" id="about">
+        <h2>Обо мне:</h2>
+        <p>С детства увлекался компьютерами, а в университете познакомился с C# и понял, что хочу развиваться в этом направлении. Люблю разбираться в технологиях, строить понятную архитектуру и оптимизировать код. Мне важно, чтобы проект был не только рабочим, но и хорошо спроектированным.</p>
+
+      </div>
+
+      
+    <div class="section goal" id="goal">
+        <h2>Цель:</h2>
+        <p>Развитие и профессиональный рост в области .NET разработки, участие в проектах различной сложности с использованием современных технологий и инструментов.</p>
+    </div>
+    <div class="section experience" id="experience">
+        <h2>Опыт работы:</h2>
+        <div class="job">
+            <h3>Инженер-программист | ПолесГУ</h3>
+            <p>Даты работы: май 2023 - май 2024</p>
+            <ul>
+                <li>Разработка и поддержка программного обеспечения</li>
+                <li>Параллельная работа на фрилансе, выполнение проектов различной сложности</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>НДА</h3>
+            <p>Даты работы: 28 октября 2024 - 27 октября 2025</p>
+            <ul>
+                <li>Разработка API (монолиты и микросервисы)</li>
+                <li>Разработка и поддержка программного обеспечения</li>
+                <li>Реализация IT проектов в рамках конфиденциальных проектов</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section education" id="education">
+        <h2>Образование:</h2>
+        <p>ПолесГУ | Инженер-программист-экономист</p>
+        <p>Годы обучения: 2020 - 2024</p>
+    </div>
+    <div class="section skills" id="skills">
+        <h2>Hard Навыки:</h2>
+   
+        <ul>
+            <li><strong>.NET:</strong> Знание фреймворка, включая понимание принципов работы CLR, GC, асинхронности, многопоточности <span class="level">Средний</span></li>
+            <ul>
+                <li><strong>ASP.NET:</strong> Разработка RESTful API, работа с middleware, аутентификацией и авторизацией, настройка CORS </li>
+                <li><strong>Entity Framework Core:</strong> Опыт работы с ORM для .NET, написание запросов LINQ, оптимизация производительности запросов</li>
+                <li><strong>SignalR:</strong> Настройка и использование SignalR для реализации функциональности real-time связи</li>
+                <li><strong>Брокеры:</strong> RabbitMQ, настройка брокеров сообщений, работа с очередями и обменами</li>
+                <li><strong>Работа с базами данных (SQL Server, PostgreSQL, MongoDB):</strong> Написание запросов, оптимизация производительности, проектирование схем баз данных, понимание принципов индексирования </li>
+                <li><strong>Знание шаблонов проектирования:</strong> Singleton, Factory, Observer, Strategy, применение паттернов в повседневной работе для улучшения архитектуры приложений</li>
+            </ul>
+            <li><strong>Работа с Git:</strong> Управление версиями, слияние веток, разрешение конфликтов</li>
+            <li><strong>Фронтенд:</strong> Основные знания Angular, создание компонентов, работа с сервисами <span class="level">Начальный</span></li>
+            <li><strong>Контейнеризация:</strong> Docker, создание и управление контейнерами, написание Dockerfile, использование docker-compose для оркестрации контейнеров <span class="level">Начальный</span></li>
+            <li><strong>Дополнительные навыки:</strong> Знания и опыт разработки микросервисов и монолитов</li>
+        </ul>
+            
+    
+        <h2>Soft Навыки:</h2>
+        <ul>
+            <li><strong>Адаптивность и быстрая обучаемость</strong></li>
+            <li><strong>Проактивность и самостоятельность</strong></li>
+            <li><strong>Навыки коммуникации и командной работы</strong> </li>
+        </ul>
+    </div>
+    <div class="section projects" id="projects">
+        <h2>Проекты:</h2>
+        <p>Реализованы IT проекты в рамках конфиденциальных проектов</p>
+    </div>
+    <div class="section contact" id="contact">
+        <h2>Контактная информация:</h2>
+        <p>Email: <a href="mailto:toni.samoshuk@gmail.com">toni.samoshuk&#64;gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/dk_tengen">&#64;dk_tengen</a></p>
+        <p>Git: <a href="https://github.com/JotaroSamo">https://github.com/JotaroSamo</a></p>
+      </div>
+    <a routerLink="/game">Если скучно</a>
+</div>

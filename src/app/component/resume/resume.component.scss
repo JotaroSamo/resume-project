@@ -1,0 +1,100 @@
+.name {
+  font-size: 2.5em;
+  color: var(--color-main);
+  text-shadow: 0 0 5px var(--color-main);
+  
+  @media (max-width: 768px) { // Планшеты и телефоны
+      font-size: 2em;
+  }
+
+  @media (max-width: 480px) { // Маленькие телефоны
+      font-size: 1.5em;
+  }
+}
+
+/* resume.component.scss */
+
+.background-container {
+    position: fixed;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+
+  }
+  
+  .falling-icon {
+    position: absolute;
+    animation: fall 15s linear infinite;
+    opacity: 0.8;
+  }
+  
+  .falling-icon img {
+    width: 100%;
+    height: auto;
+  }
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+.section {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    transition: all 0.5s ease;
+}
+.level {
+    font-weight: bold;
+    color: var(--color-main);
+    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+   animation: fadeIn 1s ease-in-out;
+  @media (max-width: 768px) {
+      align-items: center;
+  }
+}
+
+.profile-photo {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-main);
+  box-shadow: 0 0 40px var(--color-main);
+  animation: fadeIn 1s ease-in-out;
+
+  @media (max-width: 480px) {
+      width: 100px;
+      height: 100px;
+  }
+}
