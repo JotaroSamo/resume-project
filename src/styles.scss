@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-:root
-{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
     --color-main:#b54af8;
 }
 
 body {
     background-color: #1a1a1a;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #e0e0e0;
 }
+
 
 .container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 30px;
-    background: linear-gradient(145deg, #333333, #1a1a1a38);
+    background: linear-gradient(145deg, #333333, #1a1a1a);
    
     border-radius: 15px;
     box-shadow: 0 0 300px rgba(181, 74, 248, 1);

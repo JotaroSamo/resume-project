@@ -32,13 +32,7 @@ export class ResumeComponent implements OnInit {
   }
 
   calculateAge(): void {
-    const today = new Date();
-    this.age = today.getFullYear() - this.birthDate.getFullYear();
-    const monthDifference = today.getMonth() - this.birthDate.getMonth();
-
-    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < this.birthDate.getDate())) {
-      this.age--;
-    }
+    this.age = this.ageService.calculateAge(this.birthDate);
   }
 
   startIconGeneration(): void {
